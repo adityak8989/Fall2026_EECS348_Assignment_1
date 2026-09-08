@@ -29,8 +29,8 @@ Initialize variables needed in the code
     int maxGuess =10;// Maximum valid guess bound (Authored by Author)
     int won = 0;// Flag variable: 0 = not won yet, 1 = won (Authored by Gemini)
 
-    // Print initial instructions using the min and max bounds (Authored by Author)
-    printf("Guess a number between %d and %d.\n",minGuess,maxGuess);
+    
+    printf("Guess a number between %d and %d.\n",minGuess,maxGuess);// Print initial instructions using the min and max bounds (Authored by Author)
 
     /*
      * Block: Game Loop and Logic
@@ -55,11 +55,11 @@ Initialize variables needed in the code
             printf("Correct! You win!\n");// Print winning message (Authored by Gemini)
             won = 1;// Update flag to indicate a win (Authored by Gemini)
             break; // Immediately exit the for loop (Authored by Gemini)
-        } 
+        } //end of if block (Authored by Gemini)
 
         else if (guess < secretNumber) {// Check if guess is lower than secret (Authored by Gemini)
             printf("Too low!");// Print low warning without newline (Authored by Gemini)
-        } 
+        } //end of if block (Authored by Gemini)
         
         else {// Fallthrough case: guess must be higher than secret (Authored by Gemini)
             printf("Too high!");// Print high warning without newline (Authored by Gemini)
